@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueResource from 'vue-resource';
 
 import Repo from './components/Repo';
+import quotes from './quotes.json';
 
 Vue.use(VueResource);
 
@@ -16,16 +17,16 @@ new Vue({
   data: {
     listOfRepo: [],
     repoLoaded: false,
-    quote: {
-      author: '',
-      content: '',
-    },
   },
 
   computed: {
     repos() {
       return this.listOfRepo.slice(0, 6);
     },
+
+    quote() {
+      return quotes[Math.floor(Math.random() * quotes.length)];
+    }
   },
 
   methods: {
@@ -44,20 +45,9 @@ new Vue({
           this.repoLoaded = true;
         });
     },
-
-    getRandomQuote() {
-      this.$http.get('http://quotes.stormconsultancy.co.uk/random.json').then(res => {
-        this.quote = Object.assign(this.quote, {
-          author: res.body.author,
-          content: res.body.quote,
-        });
-        console.log(this.quote);
-      });
-    }
   },
 
   mounted() {
     this.getRepos();
-    this.getRandomQuote();
   }
 });
