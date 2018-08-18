@@ -44,3 +44,7 @@ exclude:
   - firebase.json
   - firebase-debug.log
   - README.md
+  - package.json
+  - package-lock.json
+  - webpack.mix.js
+  - src
