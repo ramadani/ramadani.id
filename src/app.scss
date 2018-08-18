@@ -11,7 +11,7 @@ $red: #f74b51 !default;
 $purple: #8951dc !default;
 $teal: #1cd0ae !default;
 
-$light: #f6f6f8 !default;
+$light: #f2f3f3 !default;
 $secondary:     #E7AF10 !default;
 $gray-150: #f5f5f5 !default;
 
@@ -46,4 +46,9 @@ $input-btn-padding-x-sm:      .62rem !default;
   font-weight: 500;
   line-height: 1.2;
   margin-left: -3px;
+}
+
+.shadowable:hover {
+  box-shadow: 0px 5px 10px 0px rgb(235, 235, 235);
+  transition: box-shadow 0.1s ease-in-out;
 }
