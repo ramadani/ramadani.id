@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,700');
+
+$font-family-sans-serif:      'Roboto', sans-serif;
+$font-weight-normal:          300;
+
+$blue: #4c7bf3 !default;
+$green: #29cc6d !default;
+$yellow: #f3cb0a !default;
+$cyan: #35AAEB !default;
+$red: #f74b51 !default;
+$purple: #8951dc !default;
+$teal: #1cd0ae !default;
+
+$light: #f6f6f8 !default;
+$secondary:     #E7AF10 !default;
+$gray-150: #f5f5f5 !default;
+
+$small-font-size:             84% !default;
+$border-radius:               .16rem !default;
+
+$input-btn-padding-y:         .5rem !default;
+$input-btn-padding-x:         .82rem !default;
+
+$input-btn-padding-y-sm:      .34rem !default;
+$input-btn-padding-x-sm:      .62rem !default;
+
+@import "node_modules/bootstrap/scss/bootstrap";
