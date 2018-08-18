@@ -26,16 +26,6 @@ $input-btn-padding-x-sm:      .62rem !default;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-.row.lg-gutters {
-  margin-left: -20px;
-  margin-right: -20px;
-
-  > [class*="col-"] {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-
 .intro {
   margin-top: 10em;
   margin-bottom: 4em;
@@ -46,6 +36,18 @@ $input-btn-padding-x-sm:      .62rem !default;
   font-weight: 500;
   line-height: 1.2;
   margin-left: -3px;
+}
+
+@media only screen and (min-width: 540px) {
+  .row.lg-gutters {
+    margin-left: -20px;
+    margin-right: -20px;
+
+    > [class*="col-"] {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
 }
 
 @media only screen and (max-width: 540px) {

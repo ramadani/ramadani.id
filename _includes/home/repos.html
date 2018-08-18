@@ -3,7 +3,7 @@
     <i class="fab fa-github fa-fw"></i> Latest Repositories
   </div>
   <div class="row lg-gutter d-flex align-items-stretch" v-if="repoLoaded">
-    <div class="col-md-4 col-sm-6 col-12 mt-4 d-flex" v-for="repo in repos">
+    <div class="col-lg-4 col-sm-6 col-12 mt-4 d-flex" v-for="repo in repos">
       <repo :repo="repo" :key="repo.id" v-bind:class="{ 'align-self-stretch flex-fill border border-light rounded shadowable' : true }"></repo>
     </div>
   </div>
