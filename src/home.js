@@ -19,8 +19,8 @@ new Vue({
 
   computed: {
     repos() {
-      return this.listOfRepo.slice(0, 9);
-    }
+      return this.listOfRepo.slice(0, 6);
+    },
   },
 
   methods: {
@@ -40,7 +40,7 @@ new Vue({
         }, res => {
 
         });
-    }
+    },
   },
 
   mounted() {

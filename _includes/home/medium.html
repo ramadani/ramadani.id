@@ -1,0 +1,20 @@
+<div class="col-12 my-4 py-4">
+  <div>
+    <i class="fab fa-medium fa-fw"></i> Latest Posts
+  </div>
+  <div class="row lg-gutter d-flex align-items-stretch">
+    {% for item in site.data.medium %}
+    <div class="col-md-6 col-12 mt-4">
+      <div class="media">
+        <img class="mr-3 rounded" src="{{ item.img }}" width="90" height="90" alt="{{ item.title }}">
+        <div class="media-body">
+          <h5 class="mt-0">
+            <a href="{{ item.url }}" target="_blank" class="text-body">{{ item.title }}</a>
+          </h5>
+          {{ item.subtitle }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
