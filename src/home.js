@@ -7,6 +7,7 @@ Vue.use(VueResource);
 
 new Vue({
   el: '#home',
+  delimiters: ['${', '}'],
 
   components: {
     Repo,
@@ -15,6 +16,10 @@ new Vue({
   data: {
     listOfRepo: [],
     repoLoaded: false,
+    quote: {
+      author: '',
+      content: '',
+    },
   },
 
   computed: {
@@ -37,13 +42,22 @@ new Vue({
         .then(res => {
           this.listOfRepo = res.body;
           this.repoLoaded = true;
-        }, res => {
-
         });
     },
+
+    getRandomQuote() {
+      this.$http.get('http://quotes.stormconsultancy.co.uk/random.json').then(res => {
+        this.quote = Object.assign(this.quote, {
+          author: res.body.author,
+          content: res.body.quote,
+        });
+        console.log(this.quote);
+      });
+    }
   },
 
   mounted() {
     this.getRepos();
+    this.getRandomQuote();
   }
 });
