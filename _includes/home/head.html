@@ -1,0 +1,15 @@
+<div class="col-12 mt-3 mt-sm-5 mb-3">
+  <nav class="nav nav-pills nav-justified justify-content-end mt-md-3">
+    {% for item in site.data.header.socmed %}
+    <a class="nav-link p-2" href="{{ item.url }}" title="{{ item.name }}" target="_blank">
+      <i class="{{ item.icon }} fa-fw fa-2x text-body"></i>
+    </a>
+    {% endfor %}
+  </nav>
+
+  <div class="intro">
+    <div class="mb-5">Hello World</div>
+    <div class="intro__id">Hi, I'm Ramadani</div>
+    <div class="intro__id">Software Engineer</div>
+  </div>
+</div>

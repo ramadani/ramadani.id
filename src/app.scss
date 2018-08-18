@@ -25,3 +25,25 @@ $input-btn-padding-y-sm:      .34rem !default;
 $input-btn-padding-x-sm:      .62rem !default;
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
+.row.lg-gutters {
+  margin-left: -20px;
+  margin-right: -20px;
+
+  > [class*="col-"] {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.intro {
+  margin-top: 10em;
+  margin-bottom: 4em;
+}
+
+.intro__id {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-left: -3px;
+}
