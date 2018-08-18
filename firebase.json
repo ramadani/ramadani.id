@@ -3,6 +3,7 @@
     "public": "_site",
     "ignore": [
       "firebase.json",
+      "feed.xml",
       "**/.*",
       "**/node_modules/**"
     ]
