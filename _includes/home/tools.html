@@ -1,7 +1,7 @@
 <div class="col-12 my-3 py-3">
-    <div class="d-flex justify-content-center align-items-center">
+    <div class="d-flex flex-wrap flex-sm-nowrap justify-content-center align-items-center">
       {% for item in site.data.tools %}
-      <img src="{{ item.img }}" height="48" class="grayscalable px-4" alt="{{ item.name }}" title="{{ item.name }}" />
+      <img src="{{ item.img }}" height="48" class="grayscalable px-4 mt-3 mt-sm-0" alt="{{ item.name }}" title="{{ item.name }}" />
       {% endfor %}
     </div>
 </div>
