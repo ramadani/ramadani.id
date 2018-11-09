@@ -9,8 +9,11 @@
         <div v-show="repo.language" class="mr-2">
           {{ repo.language }}
         </div>
-        <div v-show="repo.stargazers_count">
+        <div v-show="repo.stargazers_count" class="mr-2">
           <i class="fas fa-star fa-fw text-secondary"></i> {{ repo.stargazers_count }}
+        </div>
+        <div v-show="repo.forks_count">
+          <i class="fas fa-code-branch fa-fw text-body"></i> {{ repo.forks_count }}
         </div>
       </div>
     </div>
