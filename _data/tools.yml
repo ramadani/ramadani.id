@@ -1,3 +1,5 @@
+- name: "Go"
+  img: "/dist/img/go.png"
 - name: "Laravel"
   img: "/dist/img/laravel.png"
 - name: "Vue.js"
